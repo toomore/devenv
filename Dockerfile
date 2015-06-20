@@ -11,4 +11,4 @@ RUN git clone https://github.com/toomore/toomore.vim.git ~/.vim/toomore.vim/
 RUN sh ~/.vim/toomore.vim/make_ubuntu.sh
 RUN cp ~/.vim/toomore.vim/bashrc.ubuntu ~/.bashrc
 
-COPY ./install_mariadb.sh ~/
+COPY install_mariadb.sh /root/
