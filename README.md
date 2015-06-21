@@ -19,10 +19,18 @@ Default Install
 Option Install
 ---------------
 
-Some deb install scripts in `~/install_deb/`
+Some scripts for install deb in `~/install_deb/`
 
 * MariaDB 10.0
 * Redis
+
+Pull Repo
+----------
+
+Fast pull repo scripts in `~/pull_repo/`
+
+* [toomore/gogrs](https://github.com/toomore/gogrs)
+* [toomore/Pensieve-go](https://github.com/toomore/Pensieve-go)
 
 Docker
 -------
