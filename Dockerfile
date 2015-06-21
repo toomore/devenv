@@ -15,4 +15,4 @@ RUN git clone https://github.com/toomore/toomore.vim.git ~/.vim/toomore.vim/ && 
     cp ~/.vim/toomore.vim/bashrc.ubuntu ~/.bashrc && \
     cp ~/.vim/toomore.vim/tmux.conf.mac ~/.tmux.conf
 
-COPY install_mariadb.sh /root/
+COPY /install_deb/ /root/install_deb/

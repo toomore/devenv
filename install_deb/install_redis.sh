@@ -1,4 +1,4 @@
 #!/bin/bash
 apt-get update
-apt-get install redis-server
+apt-get install -y redis-server
 service redis-server start
