@@ -13,6 +13,7 @@ RUN git clone --depth 1 https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/V
 RUN git clone --depth 1 https://github.com/toomore/toomore.vim.git ~/.vim/toomore.vim/ && \
     sh ~/.vim/toomore.vim/make_ubuntu.sh && \
     cp ~/.vim/toomore.vim/bashrc.ubuntu ~/.bashrc && \
+    cp ~/.vim/toomore.vim/.gitconfig ~/ && \
     cp ~/.vim/toomore.vim/tmux.conf.mac ~/.tmux.conf
 
 COPY /install_deb/ /root/install_deb/
