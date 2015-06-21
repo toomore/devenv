@@ -9,8 +9,8 @@ ENV PATH $GOROOT/bin:$GOPATH/bin:$PATH
 RUN mkdir /gopath && apt-get update && \
     apt-get install -y git vim curl gcc ctags tmux && \
     rm -rf /var/lib/apt/lists/*
-RUN git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-RUN git clone https://github.com/toomore/toomore.vim.git ~/.vim/toomore.vim/ && \
+RUN git clone --depth 1 https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+RUN git clone --depth 1 https://github.com/toomore/toomore.vim.git ~/.vim/toomore.vim/ && \
     sh ~/.vim/toomore.vim/make_ubuntu.sh && \
     cp ~/.vim/toomore.vim/bashrc.ubuntu ~/.bashrc && \
     cp ~/.vim/toomore.vim/tmux.conf.mac ~/.tmux.conf
