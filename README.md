@@ -10,6 +10,7 @@ Default Install
 * curl
 * gcc
 * git
+* go (by docker ADD `go1.4.2.linux-amd64.tar.gz`)
 * tmux
 * vim
   * w/ Vundle
@@ -29,6 +30,10 @@ Docker
 Get some source/binary code.
 
     sh ./make.sh
+
+Direct pull image
+
+    docker pull toomore/devenv
 
 Run container.
 
