@@ -14,7 +14,7 @@ Default Install
 * tmux
 * vim
   * w/ Vundle
-  * conf. from [toomore/toomore.vim](https://github.com/toomore/toomore.vim).
+  * vimrc from [toomore/toomore.vim](https://github.com/toomore/toomore.vim).
 
 Option Install
 ---------------
@@ -35,14 +35,18 @@ Fast pull repo scripts in `~/pull_repo/`
 Docker
 -------
 
-Get some source/binary code.
+Build docker image
 
     sh ./make.sh
 
-Direct pull image
+or pull image from docker hub.
 
     docker pull toomore/devenv
 
-Run container.
+Run in container.
 
     docker run -it toomore/devenv
+
+Or run short term.
+
+    docker run -it --rm toomore/devenv
