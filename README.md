@@ -26,6 +26,10 @@ Some deb install scripts in `~/install_deb/`
 Docker
 -------
 
+Get some source/binary code.
+
     sh ./make.sh
+
+Run container.
 
     docker run -it toomore/devenv
