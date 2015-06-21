@@ -13,6 +13,7 @@ Default Install
 * tmux
 * vim
   * w/ Vundle
+  * conf. from [toomore/toomore.vim](https://github.com/toomore/toomore.vim).
 
 Option Install
 ---------------
