@@ -11,6 +11,7 @@ Default Install
 * gcc
 * git
 * go (by docker ADD `go1.4.2.linux-amd64.tar.gz`)
+* python3
 * tmux
 * vim
   * w/ Vundle
@@ -22,6 +23,7 @@ Option Install
 Some scripts for install deb in `~/install_deb/`
 
 * MariaDB 10.0
+* Python2, pip, virtualenv.
 * Redis
 
 Pull Repo
