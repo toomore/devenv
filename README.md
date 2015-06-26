@@ -14,6 +14,7 @@ Default Install
 * python3
 * tmux
 * vim
+  * w/ lua
   * w/ Vundle
   * vimrc from [toomore/toomore.vim](https://github.com/toomore/toomore.vim).
 
