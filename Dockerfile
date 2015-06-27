@@ -1,4 +1,5 @@
 FROM ubuntu:14.04
+MAINTAINER Toomore Chiang <toomore0929@gmail.com>
 
 ADD go1.4.2.linux-amd64.tar.gz .
 
