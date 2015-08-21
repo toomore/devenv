@@ -6,6 +6,7 @@ ADD go1.5.linux-amd64.tar.gz .
 ENV GOROOT /go
 ENV GOPATH /gopath
 ENV PATH $GOROOT/bin:$GOPATH/bin:$PATH
+ENV VIMVER "7.4.826"
 
 RUN mkdir /gopath && apt-get update && apt-get dist-upgrade -y && \
     apt-get install -y git curl gcc tmux \
@@ -13,9 +14,9 @@ RUN mkdir /gopath && apt-get update && apt-get dist-upgrade -y && \
     ln -s /usr/include/lua5.2/ /usr/include/lua                      && \
     ln -s /usr/lib/x86_64-linux-gnu/liblua5.2.so /usr/lib/liblua.so  && \
     cd /tmp && \
-    curl https://mirrors.kernel.org/debian/pool/main/v/vim/vim_7.4.826.orig.tar.gz > vim.tar.gz && \
+    curl https://mirrors.kernel.org/debian/pool/main/v/vim/vim_${VIMVER}.orig.tar.gz > vim.tar.gz && \
     tar -xvf ./vim.tar.gz && \
-    cd /tmp/vim-7.4.826/ && \
+    cd /tmp/vim-${VIMVER}/ && \
     ./configure --with-features=huge --enable-luainterp                    \
         --enable-gui=no --without-x --prefix=/usr                       && \
     make VIMRUNTIMEDIR=/usr/share/vim/vim74                             && \

@@ -10,7 +10,7 @@ Default Install
 * curl
 * gcc
 * git
-* go (by docker ADD `go1.4.2.linux-amd64.tar.gz`)
+* go (by docker ADD `go1.5.linux-amd64.tar.gz`)
 * python3
 * tmux
 * vim
