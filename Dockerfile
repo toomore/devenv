@@ -6,7 +6,7 @@ ADD go1.5.2.linux-amd64.tar.gz .
 ENV GOROOT /go
 ENV GOPATH /gopath
 ENV PATH $GOROOT/bin:$GOPATH/bin:$PATH
-ENV VIMVER "7.4.826"
+ENV VIMVER "7.4.1022"
 
 RUN mkdir /gopath && apt-get update && apt-get dist-upgrade -y && \
     apt-get install -y git curl gcc tmux \
