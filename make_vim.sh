@@ -1,5 +1,5 @@
 #!/bin/bash
-VIMVER="7.4.1022"
+VIMVER="7.4.1051"
 
 curl -L https://github.com/vim/vim/archive/v${VIMVER}.tar.gz > vim.tar.gz
 tar -xvf ./vim.tar.gz
