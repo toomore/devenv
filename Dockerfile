@@ -1,12 +1,12 @@
 FROM ubuntu:14.04
 MAINTAINER Toomore Chiang <toomore0929@gmail.com>
 
-ADD go1.5.2.linux-amd64.tar.gz .
+ADD go.tar.gz .
 
 ENV GOROOT /go
 ENV GOPATH /gopath
 ENV PATH $GOROOT/bin:$GOPATH/bin:$PATH
-ENV VIMVER "7.4.826"
+ENV VIMVER "7.4.1051"
 
 RUN mkdir /gopath && apt-get update && apt-get dist-upgrade -y && \
     apt-get install -y git curl gcc tmux \
@@ -14,7 +14,7 @@ RUN mkdir /gopath && apt-get update && apt-get dist-upgrade -y && \
     ln -s /usr/include/lua5.2/ /usr/include/lua                      && \
     ln -s /usr/lib/x86_64-linux-gnu/liblua5.2.so /usr/lib/liblua.so  && \
     cd /tmp && \
-    curl https://mirrors.kernel.org/debian/pool/main/v/vim/vim_${VIMVER}.orig.tar.gz > vim.tar.gz && \
+    curl -L https://github.com/vim/vim/archive/v${VIMVER}.tar.gz > vim.tar.gz && \
     tar -xvf ./vim.tar.gz && \
     cd /tmp/vim-${VIMVER}/ && \
     ./configure --with-features=huge --enable-luainterp                    \
